@@ -8,7 +8,7 @@ export const site = {
   phone: "0975227275", // shown as 0975 227 275
   phoneIntl: "+260975227275", // used for the tap-to-call link
   linkedin: "", // full URL, e.g. "https://www.linkedin.com/in/your-name"
-  github: "", // full URL, e.g. "https://github.com/your-username"
+  github: "https://github.com/ChamaHumphrey",
   cvUrl: "/Humphrey-Chama-CV.pdf", // file lives in /public. Replace it with your own CV any time, keeping the same name.
   siteUrl: "https://your-site.vercel.app", // replace after deploying
 };
@@ -40,12 +40,14 @@ export const experience = [
 
 export type Project = {
   name: string; category: "AI" | "EdTech" | "Systems" | "Industry & Events"; role: string;
-  description: string; tags?: string[]; demo?: string; code?: string;
+  description: string; problem?: string; contribution?: string; status?: string; tags?: string[]; demo?: string; code?: string;
 };
 
 export const projects: Project[] = [
   { name: "Nzelu AI", category: "AI", role: "Development team member",
-    description: "A Zambian educational technology platform that supports teachers. I connect backend systems to AI services so the application can process educational books and generate relevant answers.",
+    description: "A Zambian educational technology platform that supports teachers.",
+    problem: "Giving teachers a faster way to get relevant answers from educational books.",
+    contribution: "Connecting the backend to AI services so books can be processed and responses generated.",
     tags: ["Backend", "AI integration"] },
   { name: "BooxClash Learn", category: "EdTech", role: "Co-founder / project contributor",
     description: "A learning concept that aims to make K–12 education more engaging through interactive, game-based experiences." },
@@ -53,8 +55,8 @@ export const projects: Project[] = [
     description: "A digital marketplace initiative that aims to connect people with products and marketplace services through technology." },
   { name: "PlanFi", category: "AI", role: "Co-founder / contributor",
     description: "An AI-powered teaching-assistant concept for Zambian teachers, aimed at supporting teaching workflows and educational tasks." },
-  { name: "Smart Automatic Timetable", category: "Systems", role: "Developer",
-    description: "A timetable management solution that is in use. Scheduling systems help organise academic activities and reduce manual planning." },
+  { name: "Smart Automatic Timetable", category: "Systems", role: "Project contributor", status: "In use",
+    description: "A timetable management solution for organising academic scheduling." },
   { name: "ChristTech Academy Management System", category: "Systems", role: "Developer",
     description: "A management system built for an educational setting, applying software to information management and organisational processes." },
   { name: "Hospital Billing System", category: "Industry & Events", role: "Attachment exposure",
@@ -64,11 +66,11 @@ export const projects: Project[] = [
 ];
 
 export const skills = [
-  { group: "Backend and software development", strong: true, icon: "server", items: ["C#", "ASP.NET Core", "REST APIs", "API integration", "Software engineering fundamentals"] },
+  { group: "Backend development", strong: true, icon: "server", items: ["C#", "ASP.NET Core", "REST APIs", "API integration", "Software engineering fundamentals"] },
   { group: "Databases", strong: true, icon: "database", items: ["SQL", "MySQL", "SQL Server", "Database design and management"] },
-  { group: "AI and development workflows", strong: true, icon: "brain", items: ["AI integration", "Prompt engineering", "GitHub Copilot", "Claude Code", "DeepSeek", "AI-assisted coding and debugging"] },
-  { group: "Programming and data", strong: false, icon: "code", items: ["Python", "Data analysis fundamentals", "Power BI and dashboards", "Machine learning fundamentals"] },
-  { group: "Computer science knowledge", strong: false, icon: "network", items: ["Cloud computing fundamentals", "Distributed and concurrent systems", "Web development", "Computer networks", "Operating systems", "Data structures and algorithms"] },
+  { group: "AI and integration", strong: true, icon: "brain", items: ["AI service integration", "Prompt engineering", "GitHub Copilot", "Claude Code", "DeepSeek", "AI-assisted coding and debugging"] },
+  { group: "Data and analytics", strong: false, icon: "code", items: ["Python", "Data analysis fundamentals", "Power BI and dashboards", "Machine learning fundamentals"] },
+  { group: "Core IT and computer science", strong: false, icon: "network", items: ["Cloud computing fundamentals", "Distributed and concurrent systems", "Web development", "Computer networks", "Operating systems", "Data structures and algorithms"] },
 ];
 
 export const leadership = [

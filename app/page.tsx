@@ -58,9 +58,9 @@ export default function Home() {
               <h1 className="rise rise-2 mt-5">I Build Software That Solves Real Problems.</h1>
               <p className="rise rise-3 mt-6 max-w-xl text-lg leading-relaxed text-muted">Computer Science graduate and software developer focused on backend systems, AI integration, and practical digital solutions.</p>
               <div className="rise rise-3 mt-9 flex flex-wrap gap-3">
-                <a href="#projects" className="btn btn-primary">Explore My Projects <ArrowRight size={16} aria-hidden /></a>
+                <a href="#projects" className="btn btn-primary">View My Projects <ArrowRight size={16} aria-hidden /></a>
                 <a href="#contact" className="btn btn-ghost">Contact Me</a>
-                <CvButton label="Download My CV" />
+                <CvButton />
               </div>
             </div>
             <div className="rise rise-2 panel p-5 md:p-7"><Architecture /></div>
@@ -70,8 +70,8 @@ export default function Home() {
         <Section id="about" title="About me">
           <div className="mt-8 grid gap-10 lg:grid-cols-[1.2fr_.8fr]">
             <div className="max-w-prose space-y-4 text-lg leading-relaxed text-muted">
-              <p>I am a Computer Science graduate with practical experience in software development, backend systems, database management, API integration, information management systems and AI-powered applications.</p>
-              <p>I enjoy solving practical problems through technology: building systems that make work easier, improve access to information and support better decisions.</p>
+              <p>I am a Computer Science graduate of Mukuba University (BSc, 2025, Merit) with practical experience in software development, backend systems, databases, API integration and AI-powered applications. I am particularly interested in backend development, AI integration and data analysis.</p>
+              <p>I enjoy solving practical problems through technology: building systems that make work easier, improve access to information and support better decisions. I keep learning by building, and by working through problems as they come up.</p>
               <p>I use GitHub Copilot, Claude Code and DeepSeek to support development, debugging and problem-solving, and prompt engineering is one of my strengths. Having worked in a busy office and courier environment, I understand the operational side of the businesses that technology is meant to serve.</p>
             </div>
             <div className="space-y-4">
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <Section id="experience" title="Experience" intro="Employment and practical attachment, kept separate.">
+        <Section id="experience" title="Experience">
           <ol className="mt-10 space-y-5 border-l border-line pl-6">
             {experience.map((x) => (
               <li key={x.org} className="relative">
@@ -129,10 +129,6 @@ export default function Home() {
                 <div><p className="font-semibold">{l.role}</p><p className="text-muted">{l.org}</p></div>
               </li>
             ))}
-            <li className="panel flex gap-4 p-5">
-              <GraduationCap className="mt-1 shrink-0 text-cyan" size={20} aria-hidden />
-              <div><p className="font-semibold">Leadership and Supervisory Skills Management</p><p className="text-muted">Certificate, TVTC</p></div>
-            </li>
           </ul>
         </Section>
 
