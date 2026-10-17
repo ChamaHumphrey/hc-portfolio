@@ -8,7 +8,7 @@ export const site = {
   phone: "0975227275", // shown as 0975 227 275
   phoneIntl: "+260975227275", // used for the tap-to-call link
   linkedin: "", // full URL, e.g. "https://www.linkedin.com/in/your-name"
-  github: "https://github.com/ChamaHumphrey",
+  github: "", // GitHub link removed so it is not shown on the website
   cvUrl: "/Humphrey-Chama-CV.pdf", // file lives in /public. Replace it with your own CV any time, keeping the same name.
   siteUrl: "https://your-site.vercel.app", // replace after deploying
 };
@@ -70,7 +70,7 @@ export const skills = [
   { group: "Databases", strong: true, icon: "database", items: ["SQL", "MySQL", "SQL Server", "Database design and management"] },
   { group: "AI and integration", strong: true, icon: "brain", items: ["AI service integration", "Prompt engineering", "GitHub Copilot", "Claude Code", "DeepSeek", "AI-assisted coding and debugging"] },
   { group: "Data and analytics", strong: false, icon: "code", items: ["Python", "Data analysis fundamentals", "Power BI and dashboards", "Machine learning fundamentals"] },
-  { group: "Core IT and computer science", strong: false, icon: "network", items: ["Cloud computing fundamentals", "Distributed and concurrent systems", "Web development", "Computer networks", "Operating systems", "Data structures and algorithms"] },
+  { group: "Core IT and computer science", strong: false, icon: "network", items: ["Cloud computing fundamentals", "Distributed and concurrent systems", "Web development", "Computer networks", "Operating systems"] },
 ];
 
 export const leadership = [
